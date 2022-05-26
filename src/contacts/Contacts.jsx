@@ -10,9 +10,8 @@ export const Contacts = () => {
                     <input/>
                     <input/>
                     <textarea/>
-
+                    <div className={style.sendButton}><a>Send</a></div>
                 </form>
-                <div className={style.sendButton}><a>Send</a></div>
 
 
             </div>
