@@ -1,0 +1,31 @@
+@import "src/common/styles/sass/variables";
+
+
+.contacts{
+    padding: 0 100px;
+    min-height: 100vh;
+    background-color: $bgSecondColor;
+    .contactsContainer{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding:100px 0;
+        .form {
+            display: flex;
+            flex-direction: column;
+            background-color: #79daff;
+            width: 280px;
+            max-width: 100%;
+            .sendButton{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                margin: 10px;
+                width: 100px;
+                height: 40px;
+                background-color: #bc40ff;
+            }
+        }
+    }
+}
+
+

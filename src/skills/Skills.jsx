@@ -1,4 +1,4 @@
-import style from './Skillls.module.css'
+import style from './Skillls.module.scss'
 import con from '../common/styles/Container.module.css'
 import {Skill} from "./skill/Skill";
 import {MyTitles} from '../common/components/title/Title';

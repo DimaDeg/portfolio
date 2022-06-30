@@ -24,22 +24,22 @@
         &::before{
             position: absolute;
             content: '';
-            background-color: black;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
+            background-color: black;
             opacity: 0.3;
+            border-radius: 6px 6px 0 0;
         }
         &:hover .button{
         display: inline-block;
-    }
+        }
         .button{
             display: none;
             cursor: pointer;
             @include text($fontFamily,1em,1.2,$textDescriptionColor);
-            background-color: #333;
-            //box-shadow: 0 10px 10px -8px;
+            background-color: $itemColor;
             position: relative;
             padding: 0.8em 2.1em;
             margin-bottom: 0.75em;
@@ -48,7 +48,12 @@
             text-shadow: none;
             border-radius: 30px;
             transition: all 0.3s ease-in-out;
+            &:hover{
+                background-color: $textDescriptionColor;
+                color: $itemColor;
+            }
         }
+
     }
     .projectInfo{
         padding: 10px;

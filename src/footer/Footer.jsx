@@ -1,4 +1,4 @@
-import style from './Footer.module.css';
+import style from './Footer.module.scss';
 import con from '../common/styles/Container.module.css'
 
 export const Footer = () => {
@@ -6,7 +6,7 @@ export const Footer = () => {
         <div className={style.footerBox}>
 
             <div className={`${con.container} ${style.footerContainer}`}>
-                <h3>Dmitry Degtyarov</h3>
+                <h3 className={style.header}>Dmitry Degtyarov</h3>
                 <div className={style.boxes}>
                     <div className={style.box}/>
                     <div className={style.box}/>
