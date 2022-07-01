@@ -1,0 +1,17 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.nav{
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    a{
+        text-decoration: none;
+        opacity: 0.55;
+        @include text($fontFamily,17px,1,$textDescriptionColor);
+    }
+    a:hover{
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+}

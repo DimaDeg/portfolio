@@ -1,5 +1,4 @@
 import style from './Projects.module.scss'
-import con from '../common/styles/Container.module.css'
 import {Project} from './project/Project';
 import {MyTitles} from '../common/components/title/Title';
 import tdl from '../assets/image/tdl.png';
@@ -19,7 +18,7 @@ const projects = [
 export const Projects = () => {
     return (
         <div className={style.projectsBlock}>
-            <div className={`${con.container} ${style.projectsContainer}`}>
+            <div className={style.projectsContainer}>
                 <MyTitles title={'Projects'} />
                 <div className={style.projects}>
                     {projects.map((f,i)=>(<Project key={i} style={f.image} name={f.name} descrition={f.description}/>))}

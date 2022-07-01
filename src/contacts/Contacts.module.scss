@@ -1,31 +1,83 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
 
 
-.contacts{
-    padding: 0 100px;
-    min-height: 100vh;
-    background-color: $bgSecondColor;
-    .contactsContainer{
-        flex-direction: column;
-        justify-content: flex-start;
-        padding:100px 0;
-        .form {
-            display: flex;
-            flex-direction: column;
-            background-color: #79daff;
-            width: 280px;
-            max-width: 100%;
-            .sendButton{
-                display: flex;
-                justify-content:center;
-                align-items: center;
-                margin: 10px;
-                width: 100px;
-                height: 40px;
-                background-color: #bc40ff;
-            }
+.contacts {
+  min-height: 70vh;
+
+  .contactsContainer {
+    @include container();
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 100px 0;
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height:300px;
+      justify-content: space-between;
+      width: 400px;
+      max-width: 100%;
+      input{
+        outline: none;
+        width: 300px;
+        height: 30px;
+        background-color: $bgSecondColor;
+        margin: 10px;
+        border-radius: 10px;
+        border: 2px solid $itemColor;
+        text-align: center;
+        @include text($fontFamily,16px,1,$textDescriptionColor);
+        &:focus{
+          background-color: $bgColor;
+          transition: all 0.3s ease-in-out 0s;
         }
+      }
+      textarea{
+        width: 306px;
+        padding: 20px;
+        outline: none;
+        min-height: 200px;
+        margin: 10px;
+        border-radius: 10px;
+        border: 2px solid $itemColor;
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: $bgSecondColor;
+        @include text($fontFamily,16px,1.5,$textDescriptionColor);
+        &:focus{
+          background-color: $bgColor;
+          transition: all 0.3s ease-in-out 0s;
+        }
+      }
+      .sendButton {
+        display: flex;
+        width: 100px;
+        justify-content: center;
+        cursor: pointer;
+        @include text($fontFamily, 1em, 1.2, $primaryColor);
+        color: $textDescriptionColor;
+        background-color: $itemColor;
+        position: relative;
+        padding: 0.8em 2.1em;
+        z-index: 2;
+        margin-bottom: 0.75em;
+        margin-top: 1em;
+        outline: 0;
+        border: 2px solid $primaryColor;
+        text-shadow: none;
+        border-radius: 30px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transition: all 0.4s ease-in-out;
+          background-color: $primaryColor;
+          color: $textDescriptionColor;
+        }
+
+      }
     }
+  }
 }
 
 

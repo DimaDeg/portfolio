@@ -1,5 +1,4 @@
 import style from './Skillls.module.scss'
-import con from '../common/styles/Container.module.css'
 import {Skill} from "./skill/Skill";
 import {MyTitles} from '../common/components/title/Title';
 
@@ -15,7 +14,7 @@ const skills = [
 export const Skills = () => {
     return (
         <div className={style.skillsBlock}>
-            <div className={`${con.container} ${style.skillsContainer}`}>
+            <div className={style.skillsContainer}>
                 <MyTitles title={'Skills'}/>
                 <div className={style.skills}>
                     {skills.map((f,i)=>(<Skill key={i} title={f.title} icon={f.icon} description={f.description}/>))}

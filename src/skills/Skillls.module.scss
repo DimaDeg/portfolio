@@ -1,10 +1,10 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
 
 .skillsBlock {
     min-height: 100vh;
-    background-color: $bgSecondColor;
-    padding: 100px;
     .skillsContainer {
+        @include container();
         flex-direction: column;
         justify-content: flex-start;
         .skills {

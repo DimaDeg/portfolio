@@ -1,4 +1,4 @@
-import style from './Header.module.css'
+import style from './Header.module.scss'
 import React from "react";
 import {Navigate} from "../nav/Navigate";
 

@@ -1,6 +1,7 @@
 @import '/src/common/styles/sass/variables';
 @import '/src/common/styles/sass/mixins';
 
+
 .skill{
     width: 250px;
     background-color: #333;
@@ -13,7 +14,10 @@
     border-radius: 8px;
     box-sizing: border-box;
     border: 2px solid $itemColor;
-
+    @include text($fontFamily,15px,1,$textDescriptionColor);
+    h3{
+        color: $textTitleColor;
+    }
     .icon{
         width: 60px;
         height: 60px;

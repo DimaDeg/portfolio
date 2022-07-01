@@ -1,0 +1,11 @@
+@import '/src/common/styles/sass/variables';
+
+
+.App {
+  background-color: $projectsColor;
+  max-width: 1320px;
+  @media screen and (min-width: 990px) {
+      margin: 45px;
+      border-radius: 40px;
+  }
+}

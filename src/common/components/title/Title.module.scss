@@ -1,13 +1,11 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
 
 .title {
   margin: 0 0 30px;
   display: inline-block;
-  font-family: 'Poppins', sans-serif;
-  font-size: 21px;
+  @include text($fontFamily,21px,1,$textTitleColor);
   z-index: 1;
-  color: $textDescriptionColor;
-  line-height: 1;
   font-weight: 600;
   font-style: normal;
   position: relative;

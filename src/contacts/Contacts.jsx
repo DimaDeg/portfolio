@@ -1,17 +1,16 @@
 import style from './Contacts.module.scss';
-import con from '../common/styles/Container.module.css';
 import {MyTitles} from  '../common/components/title/Title'
 
 export const Contacts = () => {
     return(
         <div className={style.contacts}>
-            <div className={`${con.container} ${style.contactsContainer}`}>
+            <div className={style.contactsContainer}>
                 <MyTitles title={'Contacts'}/>
                     <form className={style.form}>
-                        <input/>
-                        <input/>
+                        <input autoComplete={'disabled'} placeholder={'e-mail'}/>
+                        <input placeholder={'name'}/>
                         <textarea/>
-                        <div className={style.sendButton}><a>Send</a></div>
+                        <button type={'submit'} className={style.sendButton}>Send</button>
                     </form>
             </div>
         </div>

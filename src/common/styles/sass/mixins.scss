@@ -6,3 +6,12 @@
   line-height: $lineHeight;
   color: $color;
 }
+@mixin container() {
+  display: flex;
+  height: 100%;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
