@@ -11,8 +11,8 @@ const tdlImg = {
     backgroundImage:`url(${tdl})`
 }
 const projects = [
-    {image: tdlImg,name: 'social-network',description:'dadawdeqw asda sad dasdqw dasxczxcasczxw'},
-    {image: socialImg,name: 'todolist',description:'xqdas adwa daaw adw da daw dad awd awd awda qwe dasdqw w asrq eqweq sawqe'}
+    {image: tdlImg,name: 'social-network',description:'TS, Redux, RestAPI, Thunk,Material UI, Unit Tests'},
+    {image: socialImg,name: 'todolist',description:'TS, Redux-Toolkit, RestAPI, Thunk, Unit Tests'}
 ]
 
 export const Projects = () => {

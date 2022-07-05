@@ -4,7 +4,7 @@
 
 .skill{
     width: 250px;
-    background-color: #333;
+    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,14 +13,19 @@
     padding: 20px;
     border-radius: 8px;
     box-sizing: border-box;
-    border: 2px solid $itemColor;
     @include text($fontFamily,15px,1,$textDescriptionColor);
     h3{
         color: $textTitleColor;
     }
-    .icon{
-        width: 60px;
-        height: 60px;
-        background-color: #90ffa8;
+    .backIcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 90px;
+        padding: 10px;
+        border-radius: 6px;
+        background-color: $itemColor;
+        border: 2px solid $bgSecondColor;
     }
 }

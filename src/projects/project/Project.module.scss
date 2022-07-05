@@ -11,8 +11,9 @@
     border: 2px solid $itemColor;
     align-items: flex-start;
     justify-content: center;
+    margin: 0 20px;
     @media screen and (max-width: 1231px) {
-        margin-bottom: 20px;
+        margin: 20px;
     }
 
     .backgroundImage{

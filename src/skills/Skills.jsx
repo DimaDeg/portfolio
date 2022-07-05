@@ -1,14 +1,19 @@
 import style from './Skillls.module.scss'
 import {Skill} from "./skill/Skill";
 import {MyTitles} from '../common/components/title/Title';
+import js from '../assets/image/js.svg';
+import ts from '../assets/image/ts.svg';
+import react from '../assets/image/react.svg';
+import redux from '../assets/image/redux.svg';
+import html from '../assets/image/html.png'
 
 
 const skills = [
-    {title: 'html',icon:'',description:'dsfafas qweqasdw dqwda w qdq cdq  dqwdq'},
-    {title: 'css',icon:'',description:'eqweqw fsdqwe qw3'},
-    {title: 'js',icon:'',description:'dqwdqwsa dq eqweqw dqweqw  dqwdq dqw'},
-    {title: 'react',icon:'',description:'dqwdqw dqwdqw sdfsd  fsfwqdqwdqwd'},
-    {title: 'typescript',icon:'',description:'qweqw dseqwe qw'},
+    {title: 'html, css',icon:html},
+    {title: 'js',icon:js},
+    {title: 'typescript',icon:ts},
+    {title: 'react',icon:react},
+    {title: 'redux',icon:redux},
 ]
 
 export const Skills = () => {
@@ -17,7 +22,7 @@ export const Skills = () => {
             <div className={style.skillsContainer}>
                 <MyTitles title={'Skills'}/>
                 <div className={style.skills}>
-                    {skills.map((f,i)=>(<Skill key={i} title={f.title} icon={f.icon} description={f.description}/>))}
+                    {skills.map((f,i)=>(<Skill key={i} title={f.title} icon={f.icon}/>))}
                 </div>
             </div>
         </div>
